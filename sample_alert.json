@@ -1,0 +1,20 @@
+{
+  "version": "1.2",
+  "incident": {
+    "incident_id": "0.abc123",
+    "scoping_project_id": "my-project",
+    "policy_name": "GKE Pod CPU 使用率が高い",
+    "condition_name": "CPU utilization > 80%",
+    "state": "open",
+    "severity": "CRITICAL",
+    "resource_display_name": "gke-prod / payment-api",
+    "observed_value": "0.92",
+    "threshold_value": "0.8",
+    "summary": "payment-api の CPU 使用率が 5 分間しきい値 0.8 を超えています。",
+    "url": "https://console.cloud.google.com/monitoring/alerting/incidents/0.abc123?project=my-project",
+    "documentation": {
+      "content": "1. HPA の状態を確認\n2. 直近のデプロイを確認\n3. Runbook: https://example.com/runbook",
+      "mime_type": "text/markdown"
+    }
+  }
+}
